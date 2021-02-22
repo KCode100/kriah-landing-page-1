@@ -1,0 +1,80 @@
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -20vh;
+}
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.9)
+    ),
+    url("../img/torah.jpeg");
+  background-size: cover;
+  background-position: bottom;
+  transform: skewY(-4deg);
+  margin-top: -10rem;
+
+  & > * {
+    transform: skewY(4deg);
+  }
+}
+
+.section-tours {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 15rem 0;
+  margin-top: -10rem;
+}
+
+.section-stories {
+  padding: 15rem 0;
+  position: relative;
+}
+
+.section-contact {
+  padding: 15rem 0;
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+}
+
+.contact {
+  background: linear-gradient(
+      105deg,
+      rgba($color-white, 0.8) 50%,
+      transparent 50%
+    ),
+    url("../img/journey.jpg") center/cover no-repeat;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+  height: 50rem;
+  width: 100%;
+
+  &__heading {
+    font-size: 3rem;
+  }
+
+  &__info {
+    width: 50%;
+    height: 85%;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+
+  &__item {
+    min-width: 100%;
+  }
+
+  &__icon {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    color: $color-primary-dark;
+  }
+}
