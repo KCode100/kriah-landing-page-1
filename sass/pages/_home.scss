@@ -6,12 +6,17 @@
 
 .section-features {
   padding: 20rem 0;
+  // background-image: linear-gradient(
+  //     to right bottom,
+  //     rgba($color-primary-light, 0.8),
+  //     rgba($color-primary-dark, 0.9)
+  //   ),
+  //   url("../img/torah.jpeg");
   background-image: linear-gradient(
-      to right bottom,
-      rgba($color-primary-light, 0.8),
-      rgba($color-primary-dark, 0.9)
-    ),
-    url("../img/torah.jpeg");
+    to right bottom,
+    rgba($color-primary-light, 0.8),
+    rgba($color-primary-dark, 0.9) 60%
+  );
   background-size: cover;
   background-position: bottom;
   transform: skewY(-4deg);
@@ -31,6 +36,7 @@
 .section-stories {
   padding: 15rem 0;
   position: relative;
+  margin-top: -5rem;
 }
 
 .section-contact {

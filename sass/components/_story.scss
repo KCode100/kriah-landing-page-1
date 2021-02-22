@@ -24,13 +24,13 @@
   &__image {
     height: 100%;
     transition: all 0.5s;
+    transform: scale(1.05);
 
-    &--1 {
-      transform: translate(-8.5rem, 4rem) scale(1.7);
-    }
-    &--2 {
-      transform: translateX(2.5rem) scale(1.5);
-    }
+    // &--1 {
+    // }
+    // &--2 {
+    //   transform: translateX(2.5rem) scale(1.5);
+    // }
   }
 
   &__text {
@@ -57,13 +57,13 @@
 
   &:hover &__image {
     filter: blur(3px) brightness(80%);
+    transform: scale(0.98);
   }
-  &:hover &__image--1 {
-    transform: translateX(-6rem) scale(1);
-  }
-  &:hover &__image--2 {
-    transform: translateX(2.5rem) scale(1.4);
-  }
+  // &:hover &__image--1 {
+  // }
+  // &:hover &__image--2 {
+  //   transform: scale(1.4);
+  // }
 }
 
 .changed-image {

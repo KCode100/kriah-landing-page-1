@@ -148,8 +148,8 @@ body {
   font-size: 3.5rem;
   text-transform: uppercase;
   font-weight: 700;
-  background-image: -webkit-gradient(linear, left top, right top, from(#83cbec), to(#005494));
-  background-image: linear-gradient(to right, #83cbec, #005494);
+  background-image: -webkit-gradient(linear, left top, right top, from(#71b0ce), to(#005494));
+  background-image: linear-gradient(to right, #71b0ce, #005494);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -400,8 +400,8 @@ body {
 .feature-box__icon {
   font-size: 6rem;
   margin-bottom: 0.5rem;
-  background-image: -webkit-gradient(linear, left top, right top, from(#83cbec), to(#005494));
-  background-image: linear-gradient(to right, #83cbec, #005494);
+  background-image: -webkit-gradient(linear, left top, right top, from(#71b0ce), to(#005494));
+  background-image: linear-gradient(to right, #71b0ce, #005494);
   display: inline-block;
   -webkit-background-clip: text;
   color: transparent;
@@ -451,8 +451,8 @@ body {
 }
 
 .card__side--back-2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494));
-  background-image: linear-gradient(to right bottom, #83cbec, #005494);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#71b0ce), to(#005494));
+  background-image: linear-gradient(to right bottom, #71b0ce, #005494);
 }
 
 .card__side--back-3 {
@@ -485,8 +485,8 @@ body {
 }
 
 .card__picture--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494)), url(../img/shul.jpg);
-  background-image: linear-gradient(to right bottom, #83cbec, #005494), url(../img/shul.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#71b0ce), to(#005494)), url(../img/shul.jpg);
+  background-image: linear-gradient(to right bottom, #71b0ce, #005494), url(../img/shul.jpg);
 }
 
 .card__picture--3 {
@@ -518,8 +518,8 @@ body {
 }
 
 .card__heading-span--2 {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.85)), to(rgba(0, 84, 148, 0.85)));
-  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.85), rgba(0, 84, 148, 0.85));
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(113, 176, 206, 0.85)), to(rgba(0, 84, 148, 0.85)));
+  background-image: linear-gradient(to right bottom, rgba(113, 176, 206, 0.85), rgba(0, 84, 148, 0.85));
 }
 
 .card__heading-span--3 {
@@ -699,16 +699,8 @@ body {
   height: 100%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-}
-
-.story__image--1 {
-  -webkit-transform: translate(-8.5rem, 4rem) scale(1.7);
-          transform: translate(-8.5rem, 4rem) scale(1.7);
-}
-
-.story__image--2 {
-  -webkit-transform: translateX(2.5rem) scale(1.5);
-          transform: translateX(2.5rem) scale(1.5);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .story__text {
@@ -740,16 +732,8 @@ body {
 .story:hover .story__image {
   -webkit-filter: blur(3px) brightness(80%);
           filter: blur(3px) brightness(80%);
-}
-
-.story:hover .story__image--1 {
-  -webkit-transform: translateX(-6rem) scale(1);
-          transform: translateX(-6rem) scale(1);
-}
-
-.story:hover .story__image--2 {
-  -webkit-transform: translateX(2.5rem) scale(1.4);
-          transform: translateX(2.5rem) scale(1.4);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .changed-image {
@@ -842,8 +826,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.8)), to(rgba(0, 84, 148, 0.9))), url("../img/kosel.jpeg");
-  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.8), rgba(0, 84, 148, 0.9)), url("../img/kosel.jpeg");
+  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 84, 148, 0.9)), color-stop(50%, rgba(113, 176, 206, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(0, 84, 148, 0.9) 50%, rgba(113, 176, 206, 0.8) 50%);
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
@@ -868,8 +852,8 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(131, 203, 236, 0.8)), to(rgba(0, 84, 148, 0.9))), url("../img/torah.jpeg");
-  background-image: linear-gradient(to right bottom, rgba(131, 203, 236, 0.8), rgba(0, 84, 148, 0.9)), url("../img/torah.jpeg");
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(113, 176, 206, 0.8)), color-stop(60%, rgba(0, 84, 148, 0.9)));
+  background-image: linear-gradient(to right bottom, rgba(113, 176, 206, 0.8), rgba(0, 84, 148, 0.9) 60%);
   background-size: cover;
   background-position: bottom;
   -webkit-transform: skewY(-4deg);
@@ -891,12 +875,13 @@ body {
 .section-stories {
   padding: 15rem 0;
   position: relative;
+  margin-top: -5rem;
 }
 
 .section-contact {
   padding: 15rem 0;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#83cbec), to(#005494));
-  background-image: linear-gradient(to right bottom, #83cbec, #005494);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#71b0ce), to(#005494));
+  background-image: linear-gradient(to right bottom, #71b0ce, #005494);
 }
 
 .contact {
