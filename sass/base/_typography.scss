@@ -44,6 +44,8 @@ body {
   color: transparent;
   letter-spacing: 2px;
   transition: all 0.2s;
+  position: relative;
+  z-index: 1000;
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
@@ -55,12 +57,4 @@ body {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.paragraph {
-  font-size: 1.6rem;
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
 }

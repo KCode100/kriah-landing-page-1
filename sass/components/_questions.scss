@@ -1,0 +1,14 @@
+.questions {
+  z-index: 1000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 6rem;
+
+  &__question {
+    width: 20%;
+    min-width: 20rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $color-primary-dark;
+  }
+}
