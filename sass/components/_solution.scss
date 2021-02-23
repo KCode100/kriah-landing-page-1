@@ -1,9 +1,48 @@
-.solution-title {
-  animation: zoomIn 0.8s;
+.solution {
+  &__title {
+    animation: zoomIn 0.8s;
+    margin-bottom: 8rem;
+  }
+  &__subtitle {
+    display: block;
+    flex: 1;
+  }
+  &__items {
+    margin-bottom: 20rem !important;
+    justify-content: center;
+  }
+  &__item {
+    position: relative;
+    display: inline-block;
+    margin-right: 2rem;
+    max-width: 20rem;
+    color: $color-white;
+    border-radius: 3px;
+    // padding: 2rem 3rem 0;
+    // box-shadow: 0.5rem 1rem 2rem rgba($color-black, 0.2);
+    text-transform: capitalize;
+    text-align: center;
+    // background-color: orangered;
+  }
+  &__item-header {
+    position: relative;
+    z-index: 1000;
+    font-size: 2rem;
+  }
+}
+.check-mark {
+  font-family: serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30rem;
+  color: #293d5d;
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   -moz-column-count: 2;
   column-count: 2;
   -moz-column-gap: 4rem;

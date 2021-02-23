@@ -1,6 +1,6 @@
 .section-questions {
   background-color: $color-grey-light-1;
-  padding: 30rem 2rem 15rem;
+  padding: 30rem 2rem 25rem;
   margin-top: -20vh;
   position: relative;
   z-index: -1;
@@ -45,12 +45,21 @@
   }
 }
 .section-solution {
-  background-color: $color-grey-light-1;
-  padding: 0 2rem 20rem;
+  background-color: #111d30;
+  padding: 10rem 2rem 20rem;
+  transform: skewY(-4deg);
+  position: relative;
+  z-index: 1000;
+  color: $color-grey-light-2;
+  margin-top: -8rem;
+
+  &__content {
+    transform: skewY(4deg);
+  }
 }
 
 .section-features {
-  padding: 12rem 0;
+  padding: 22rem 0 12rem;
   // background-image: linear-gradient(
   //     to right bottom,
   //     rgba($color-primary-light, 0.8),

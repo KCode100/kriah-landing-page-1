@@ -718,15 +718,61 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
-.solution-title {
+.solution__title {
   -webkit-animation: zoomIn 0.8s;
           animation: zoomIn 0.8s;
+  margin-bottom: 8rem;
+}
+
+.solution__subtitle {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.solution__items {
+  margin-bottom: 20rem !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.solution__item {
+  position: relative;
+  display: inline-block;
+  margin-right: 2rem;
+  max-width: 20rem;
+  color: #fff;
+  border-radius: 3px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.solution__item-header {
+  position: relative;
+  z-index: 1000;
+  font-size: 2rem;
+}
+
+.check-mark {
+  font-family: serif;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 30rem;
+  color: #293d5d;
 }
 
 .paragraph {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  font-weight: 300;
   -webkit-column-count: 2;
           column-count: 2;
   -webkit-column-gap: 4rem;
@@ -908,6 +954,16 @@ body {
   position: relative;
 }
 
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 5.5rem;
+}
+
 .header__text-box {
   position: absolute;
   top: 40%;
@@ -919,7 +975,7 @@ body {
 
 .section-questions {
   background-color: #f7f7f7;
-  padding: 30rem 2rem 15rem;
+  padding: 30rem 2rem 25rem;
   margin-top: -20vh;
   position: relative;
   z-index: -1;
@@ -973,12 +1029,23 @@ body {
 }
 
 .section-solution {
-  background-color: #f7f7f7;
-  padding: 0 2rem 20rem;
+  background-color: #111d30;
+  padding: 10rem 2rem 20rem;
+  -webkit-transform: skewY(-4deg);
+          transform: skewY(-4deg);
+  position: relative;
+  z-index: 1000;
+  color: #eee;
+  margin-top: -8rem;
+}
+
+.section-solution__content {
+  -webkit-transform: skewY(4deg);
+          transform: skewY(4deg);
 }
 
 .section-features {
-  padding: 12rem 0;
+  padding: 22rem 0 12rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(113, 176, 206, 0.8)), color-stop(60%, rgba(0, 84, 148, 0.9)));
   background-image: linear-gradient(to right bottom, rgba(113, 176, 206, 0.8), rgba(0, 84, 148, 0.9) 60%);
   background-size: cover;
