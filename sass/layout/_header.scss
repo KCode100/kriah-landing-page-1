@@ -8,8 +8,8 @@
   //   url("../img/kosel.jpeg");
   background-image: linear-gradient(
     to right bottom,
-    rgba($color-primary-dark, 0.9) 50%,
-    rgba($color-primary-light, 0.8) 50%
+    rgba($color-primary-dark, 0.9),
+    rgba($color-primary-light, 0.8)
   );
   background-size: cover;
   background-position: bottom;

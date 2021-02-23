@@ -945,8 +945,8 @@ body {
 
 .header {
   height: 95vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, color-stop(50%, rgba(0, 84, 148, 0.9)), color-stop(50%, rgba(113, 176, 206, 0.8)));
-  background-image: linear-gradient(to right bottom, rgba(0, 84, 148, 0.9) 50%, rgba(113, 176, 206, 0.8) 50%);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 84, 148, 0.9)), to(rgba(113, 176, 206, 0.8)));
+  background-image: linear-gradient(to right bottom, rgba(0, 84, 148, 0.9), rgba(113, 176, 206, 0.8));
   background-size: cover;
   background-position: bottom;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
