@@ -768,6 +768,7 @@ body {
           transform: translate(-50%, -50%);
   font-size: 30rem;
   color: #293d5d;
+  text-shadow: 0 5px 5px rgba(113, 176, 206, 0.5);
 }
 
 .paragraph {
