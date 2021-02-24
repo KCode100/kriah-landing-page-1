@@ -7,6 +7,15 @@
   &__col--1 {
     width: 70%;
     text-align: center;
+    @media (max-width: 860px) {
+      width: 100%;
+    }
+  }
+  &__col--2 {
+    @media (max-width: 860px) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__navigation {

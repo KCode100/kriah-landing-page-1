@@ -953,6 +953,19 @@ body {
   text-align: center;
 }
 
+@media (max-width: 860px) {
+  .footer__col--1 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 860px) {
+  .footer__col--2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .footer__navigation {
   border-top: 1px solid #777;
   padding-top: 2rem;
