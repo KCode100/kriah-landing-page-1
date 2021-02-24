@@ -172,3 +172,17 @@
     color: $color-primary-dark;
   }
 }
+
+.sign-up-offer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.offer {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: rgba($color-white, 0.8);
+}

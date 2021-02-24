@@ -345,7 +345,7 @@ body {
   display: inline-block;
   text-decoration: none;
   border-bottom: 1px solid #2a9bd8;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 2rem;
   font-size: 1.6rem;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
@@ -366,6 +366,16 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.btn-text__dark {
+  background: #2a9bd8;
+  color: #fff !important;
+}
+
+.btn-text__dark:hover {
+  background: #005494;
+  color: #f7f7f7 !important;
 }
 
 .contact__link {
@@ -1259,5 +1269,29 @@ body {
   margin-left: 2rem;
   font-size: 1.8rem;
   color: #005494;
+}
+
+.sign-up-offer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offer {
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
 }
 /*# sourceMappingURL=main.css.map */
