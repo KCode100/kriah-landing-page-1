@@ -142,6 +142,13 @@ body {
   line-height: 1.7;
   color: #777;
   padding: 3rem;
+  overflow-x: hidden;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+  }
 }
 
 .heading-primary {
@@ -159,6 +166,15 @@ body {
   letter-spacing: 2rem;
   -webkit-animation: moveInLeft 1s ease-out;
           animation: moveInLeft 1s ease-out;
+  line-height: 1.3;
+}
+
+@media (max-width: 600px) {
+  .heading-primary--main {
+    font-size: 3rem;
+    letter-spacing: 1.8rem;
+    margin-bottom: 2rem;
+  }
 }
 
 .heading-primary--sub {
@@ -168,6 +184,13 @@ body {
   letter-spacing: 1.75rem;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
+}
+
+@media (max-width: 600px) {
+  .heading-primary--sub {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
 }
 
 .heading-secondary {
@@ -231,6 +254,12 @@ body {
   z-index: -1;
   opacity: 0.4;
   overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .bg-video {
+    display: none;
+  }
 }
 
 .bg-video__content {
@@ -359,6 +388,18 @@ body {
   background-color: #eee;
 }
 
+@media (max-width: 750px) {
+  .contact__link {
+    padding: 1rem 2rem !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__link {
+    padding: 1rem 2rem !important;
+  }
+}
+
 .composition {
   position: relative;
 }
@@ -416,6 +457,7 @@ body {
   transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
   transition: transform 0.3s, -webkit-transform 0.3s;
+  min-width: 20rem;
 }
 
 .feature-box__icon {
@@ -760,6 +802,12 @@ body {
   font-size: 2rem;
 }
 
+.solution__text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .check-mark {
   font-family: serif;
   position: absolute;
@@ -773,6 +821,7 @@ body {
 }
 
 .paragraph {
+  padding: 0 2rem;
   font-size: 1.8rem;
   font-weight: 300;
   -webkit-column-count: 2;
@@ -790,6 +839,13 @@ body {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 700px) {
+  .paragraph {
+    -webkit-column-count: 1;
+            column-count: 1;
+  }
+}
+
 .story {
   width: 75%;
   margin: 0 auto;
@@ -804,6 +860,15 @@ body {
           transform: skewX(-12deg);
 }
 
+@media (max-width: 800px) {
+  .story {
+    -webkit-transform: none;
+            transform: none;
+    padding: 2rem;
+    width: 90%;
+  }
+}
+
 .story__shape {
   width: 15rem;
   height: 15rem;
@@ -814,6 +879,13 @@ body {
   -webkit-transform: translateX(-3rem) skewX(12deg);
           transform: translateX(-3rem) skewX(12deg);
   position: relative;
+}
+
+@media (max-width: 800px) {
+  .story__shape {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .story__image {
@@ -827,6 +899,13 @@ body {
 .story__text {
   -webkit-transform: skewX(12deg);
           transform: skewX(12deg);
+}
+
+@media (max-width: 800px) {
+  .story__text {
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 
 .story__caption {
@@ -975,12 +1054,24 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1450px) {
+  .header__text-box {
+    top: 50%;
+  }
+}
+
 .section-questions {
   background-color: #f7f7f7;
   padding: 30rem 2rem 25rem;
   margin-top: -20vh;
   position: relative;
   z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .section-questions {
+    padding-top: 20rem;
+  }
 }
 
 .questions-container {
@@ -1004,16 +1095,10 @@ body {
 
 .questions-container__icon--big {
   top: 50%;
-  left: 10%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   opacity: 0.5;
-}
-
-@media (max-width: 2830px) {
-  .questions-container__icon--big {
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
 }
 
 .questions-container__icon--left {
@@ -1023,11 +1108,23 @@ body {
   font-size: 40rem;
 }
 
+@media (max-width: 750px) {
+  .questions-container__icon--left {
+    display: none;
+  }
+}
+
 .questions-container__icon--right {
   top: 50%;
   left: 70%;
   opacity: 0.3;
   font-size: 40rem;
+}
+
+@media (max-width: 750px) {
+  .questions-container__icon--right {
+    display: none;
+  }
 }
 
 .section-solution {
@@ -1047,7 +1144,7 @@ body {
 }
 
 .section-features {
-  padding: 22rem 0 12rem;
+  padding: 22rem 2rem 12rem;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(113, 176, 206, 0.8)), color-stop(60%, rgba(0, 84, 148, 0.9)));
   background-image: linear-gradient(to right bottom, rgba(113, 176, 206, 0.8), rgba(0, 84, 148, 0.9) 60%);
   background-size: cover;
@@ -1060,12 +1157,6 @@ body {
 .section-features > * {
   -webkit-transform: skewY(4deg);
           transform: skewY(4deg);
-}
-
-.section-tours {
-  background-color: #f7f7f7;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
 }
 
 .section-stories {
@@ -1081,16 +1172,41 @@ body {
 }
 
 .contact {
-  background: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/journey.jpg") center/cover no-repeat;
+  background: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 50%, transparent 50%), url("../img/journey.jpeg") center/cover no-repeat;
   border-radius: 3px;
   -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
           box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  height: 50rem;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 750px) {
+  .contact {
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.8) 60%, transparent 60%), url("../img/journey.jpeg") center/cover no-repeat;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact {
+    background-image: url("../img/journey.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: brightness(0.9);
+            filter: brightness(0.9);
+    text-align: center;
+  }
 }
 
 .contact__heading {
   font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+  .contact__heading {
+    font-size: 2.4rem;
+    text-align: center;
+  }
 }
 
 .contact__info {
@@ -1107,6 +1223,19 @@ body {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 3rem;
+}
+
+@media (max-width: 1000px) {
+  .contact__info {
+    width: 65%;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact__info {
+    padding: 2rem;
+    width: 100%;
+  }
 }
 
 .contact__item {

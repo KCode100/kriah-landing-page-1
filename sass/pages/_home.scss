@@ -4,6 +4,9 @@
   margin-top: -20vh;
   position: relative;
   z-index: -1;
+  @media (max-width: 1200px) {
+    padding-top: 20rem;
+  }
 }
 
 .questions-container {
@@ -22,12 +25,10 @@
 
     &--big {
       top: 50%;
-      left: 10%;
+      left: 50%;
+      transform: translate(-50%, -50%);
       opacity: 0.5;
-
       @media (max-width: 2830px) {
-        left: 50%;
-        transform: translate(-50%, -50%);
       }
     }
     &--left {
@@ -35,12 +36,18 @@
       left: 10%;
       opacity: 0.3;
       font-size: 40rem;
+      @media (max-width: 750px) {
+        display: none;
+      }
     }
     &--right {
       top: 50%;
       left: 70%;
       opacity: 0.3;
       font-size: 40rem;
+      @media (max-width: 750px) {
+        display: none;
+      }
     }
   }
 }
@@ -59,7 +66,7 @@
 }
 
 .section-features {
-  padding: 22rem 0 12rem;
+  padding: 22rem 2rem 12rem;
   // background-image: linear-gradient(
   //     to right bottom,
   //     rgba($color-primary-light, 0.8),
@@ -81,11 +88,11 @@
   }
 }
 
-.section-tours {
-  background-color: $color-grey-light-1;
-  padding: 25rem 0 15rem 0;
-  margin-top: -10rem;
-}
+// .section-tours {
+//   background-color: $color-grey-light-1;
+//   padding: 25rem 0 15rem 0;
+//   margin-top: -10rem;
+// }
 
 .section-stories {
   padding: 15rem 0;
@@ -108,14 +115,34 @@
       rgba($color-white, 0.8) 50%,
       transparent 50%
     ),
-    url("../img/journey.jpg") center/cover no-repeat;
+    url("../img/journey.jpeg") center/cover no-repeat;
   border-radius: 3px;
   box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
-  height: 50rem;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  @media (max-width: 750px) {
+    background: linear-gradient(
+        105deg,
+        rgba($color-white, 0.8) 60%,
+        transparent 60%
+      ),
+      url("../img/journey.jpeg") center/cover no-repeat;
+  }
+  @media (max-width: 600px) {
+    background-image: url("../img/journey.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.9);
+    text-align: center;
+  }
 
   &__heading {
     font-size: 3rem;
+    @media (max-width: 600px) {
+      font-size: 2.4rem;
+      text-align: center;
+    }
   }
 
   &__info {
@@ -126,6 +153,13 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 3rem;
+    @media (max-width: 1000px) {
+      width: 65%;
+    }
+    @media (max-width: 600px) {
+      padding: 2rem;
+      width: 100%;
+    }
   }
 
   &__item {

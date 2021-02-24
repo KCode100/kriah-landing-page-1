@@ -99,46 +99,16 @@
   text-transform: capitalize;
   text-decoration: none;
   font-size: 1.8rem;
-  // background-image: linear-gradient(
-  //   to right bottom,
-  //   $color-primary-light,
-  //   $color-primary-dark
-  // );
   border: 2px solid $color-primary;
   color: $color-grey-dark-2;
   background-color: rgba($color-white, 0.6);
   &::after {
     background-color: $color-grey-light-2;
   }
-
-  // &--1 {
-  //   background-image: linear-gradient(
-  //     to right bottom,
-  //     $color-secondary-light,
-  //     $color-secondary-dark
-  //   );
-  //   &::after {
-  //     background-color: $color-secondary-dark;
-  //   }
-  // }
-  // &--2 {
-  //   background-image: linear-gradient(
-  //     to right bottom,
-  //     $color-primary-light,
-  //     $color-primary-dark
-  //   );
-  //   &::after {
-  //     background-color: $color-primary-dark;
-  //   }
-  // }
-  // &--3 {
-  //   background-image: linear-gradient(
-  //     to right bottom,
-  //     $color-tertiary-light,
-  //     $color-tertiary-dark
-  //   );
-  //   &::after {
-  //     background-color: $color-tertiary-dark;
-  //   }
-  // }
+  @media (max-width: 750px) {
+    padding: 1rem 2rem !important;
+  }
+  @media (max-width: 600px) {
+    padding: 1rem 2rem !important;
+  }
 }

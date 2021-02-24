@@ -31,6 +31,9 @@
     z-index: 1000;
     font-size: 2rem;
   }
+  &__text {
+    justify-content: center;
+  }
 }
 .check-mark {
   font-family: serif;
@@ -44,6 +47,7 @@
 }
 
 .paragraph {
+  padding: 0 2rem;
   font-size: 1.8rem;
   font-weight: 300;
   -moz-column-count: 2;
@@ -60,5 +64,9 @@
 
   &:not(:last-child) {
     margin-bottom: 3rem;
+  }
+
+  @media (max-width: 700px) {
+    column-count: 1;
   }
 }
