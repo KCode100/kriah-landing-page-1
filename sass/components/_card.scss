@@ -1,6 +1,7 @@
 .card {
   position: relative;
   height: 52rem;
+  min-width: 20rem;
 
   &__side {
     height: 42rem;
@@ -20,6 +21,7 @@
     background-blend-mode: screen;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    background-position: center;
 
     &--1 {
       background-image: linear-gradient(
@@ -46,7 +48,6 @@
           $color-tertiary-dark
         ),
         url(../img/kotel.jpg);
-      // background-position: bottom;
     }
   }
 
@@ -68,5 +69,8 @@
     margin: auto;
     text-align: center;
     font-size: 2.2rem;
+    @media (max-width: 1050px) {
+      font-size: 1.8rem;
+    }
   }
 }

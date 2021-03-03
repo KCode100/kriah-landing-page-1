@@ -488,6 +488,7 @@ body {
 .card {
   position: relative;
   height: 52rem;
+  min-width: 20rem;
 }
 
 .card__side {
@@ -509,6 +510,7 @@ body {
   background-blend-mode: screen;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  background-position: center;
 }
 
 .card__picture--1 {
@@ -544,6 +546,12 @@ body {
   margin: auto;
   text-align: center;
   font-size: 2.2rem;
+}
+
+@media (max-width: 1050px) {
+  .card__details {
+    font-size: 1.8rem;
+  }
 }
 
 .popup {
