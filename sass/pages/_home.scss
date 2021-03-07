@@ -99,6 +99,11 @@
   margin-top: -5rem;
 }
 
+.section-pricing {
+  background-color: $color-grey-light-1;
+  padding: 10rem 2rem;
+}
+
 .section-contact {
   padding: 15rem 0;
   background-image: linear-gradient(
@@ -128,7 +133,6 @@
       url("../img/shawl.jpg") center/cover no-repeat;
   }
   @media (max-width: 600px) {
-    background-image: url("../img/journey.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -44,6 +44,11 @@
     }
   }
 
+  &--centered {
+    margin: auto;
+    display: inline-block;
+  }
+
   &::after {
     content: "";
     display: inline-block;

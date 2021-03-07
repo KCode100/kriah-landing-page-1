@@ -8,7 +8,7 @@
     flex: 1;
   }
   &__items {
-    margin-bottom: 20rem !important;
+    margin-bottom: 10rem !important;
     justify-content: center;
     gap: 10rem !important;
   }
@@ -25,11 +25,17 @@
     text-align: center;
     // background-color: orangered;
     // margin-bottom: 10rem;
+    @media (max-width: 769px) {
+      &:not(:last-child) {
+        margin-bottom: 6rem;
+      }
+    }
   }
   &__item-header {
     position: relative;
     z-index: 1000;
     font-size: 2rem;
+    color: rgba($color-white, 0.8);
   }
   &__text {
     justify-content: center;
@@ -41,9 +47,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 30rem;
+  font-size: 15rem;
   color: #293d5d;
-  text-shadow: 0 5px 5px rgba($color-primary-light, 0.5);
+  text-shadow: 0 2px 4px rgba($color-primary-light, 0.5);
 }
 
 .paragraph {
