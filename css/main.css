@@ -181,7 +181,7 @@ body {
   display: block;
   font-size: 2rem;
   font-weight: 700;
-  letter-spacing: 1.75rem;
+  letter-spacing: 1.2rem;
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
 }
@@ -1057,7 +1057,7 @@ body {
 
 @media (max-width: 1450px) {
   .header__text-box {
-    top: 50%;
+    top: 45%;
   }
 }
 
